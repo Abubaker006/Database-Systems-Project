@@ -1,0 +1,155 @@
+*{
+  margin:auto;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  color: #030303;
+  padding: 20px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.header{
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,rgba(154, 156, 153, 0.8),
+  rgba(0, 8, 3, 0.8)),url(./pictures/background2.jpg);
+  background-size: cover;
+  background-position: top;
+  position:relative;
+  clip-path: polygon(0 0, 100% 0,100% 100%,0 100%);
+}
+.logo{
+    width: 100px;
+}
+.text-box{
+ 
+  /* position: absolute;
+  top: 25%;
+  left:22.5%; */
+  margin-top: 40px;
+  font-size: 50%;
+  text-align: center;
+  
+}
+.primary-Heading{
+
+animation-name: movedown;
+ animation-duration: 1s;
+ animation-timing-function: ease-out;
+ }
+
+ #searchBar{
+  margin-left: 600px;
+ }
+ #Search{
+  border-radius: 500px;
+ }
+ #Button{
+
+  color: #030303;
+  background-color: #d1d1d1;
+  border-style: hidden ;
+  border-color: #777;
+   text-shadow: #030303;
+ }
+#Button:hover{
+  border-style:solid;
+  border-color: #777;
+  background-color: #777;
+}
+@keyframes movedown{
+0%{
+  opacity: 0;
+  transform:translateY(30px);
+}
+100%{
+  opacity:1;
+  transform: translateX(0);
+}
+}
+@keyframes moveUp
+{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn:link,
+.btn:visited{
+  font-family: ubuntu;
+  /* text-transform: uppercase; */
+  font-size:15px;
+ text-decoration: none;
+  display: inline-block;
+  padding: 15px 60px;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  margin-top: 5%;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+}
+.btn:active{
+  transform: translate(-1px);
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+
+}
+.btn-white
+{
+  background-color: #fff;
+  color:  #777;
+}
+.btn::after{
+  content: "";
+  display: inline-block; 
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  transition: all .4s;
+}
+.btn-white::after{
+  background-color: #fff;
+}
+.btn:hover::after{
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn-animated{
+ animation: moveUp .5s ease-out .75s;
+ animation-fill-mode: backwards;
+}
+#LoginButton:hover,#ChangePass:hover,#Admin:hover{
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+ background-color:white
+}

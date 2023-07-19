@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="signup.css">
+  <title>Sing UP | Page</title>
+  <link rel="icon" type="image/x-icon" href="pictures/signup.png">
+</head>
+<body>
+  <div class="box">
+  <h1 class="signInHeader">Create an Account</h1>
+  <div class="MainSignInForm">
+  <form class="signInForm" action="file.php" method="POST">
+    <label for="name" ></label>
+    <input id="input1"onkeypress="buttonPress()" minlength="3"  type="text" id="name" placeholder="Enter Your Name" name="name" required><br><br>
+    
+    <label for="email"></label>
+    <input  type="email" id="email" onkeypress="buttonPress2()"  placeholder="Enter Your Email-address" minlength="11" name="email" required><br><br>
+    
+    <label for="password" placeholder="Password"></label>
+    <input type="password" id="passwordID" onkeypress="buttonPress3()" minlength="10"   placeholder="Enter Your Password" name="password" required><br><br>
+    
+    <input   class="btn button" onclick="Clicked()" type="submit" value="Sign Me Up">
+  </div>
+  </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

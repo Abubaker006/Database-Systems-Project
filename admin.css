@@ -1,0 +1,152 @@
+
+html, body {
+  min-height: 200%;
+}
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eef0f3;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-track-piece{
+
+  background-color:#f1f1f1 ;
+ }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.container {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  /* height: 100vh; */
+}
+
+form {
+  background-color: #f0f3f8;
+
+ 
+  width: 80%;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 10px 10px 20px #d9dee7, -10px -10px 20px #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+ /* display: inline-block;*/
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #e4e8f2;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #3f8efc;
+  color: #ffffff;
+  cursor: pointer;
+}
+.option{
+  width: 90%;
+}
+.radio{
+  text-align: center;
+}
+.radiospan{
+  text-align: center;
+}
+.radio-group{
+  text-align: center;
+  font-family: 'Poppins' ,' sans-serif';
+margin: 0;
+padding:0;
+box-sizing: border-box;
+display: flex;
+/* justify-content: center; */
+font-size: 15px;
+font-weight: 500;
+text-transform: capitalize;
+vertical-align: middle;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+.radio1{
+  padding-left:50px ;
+}
+.radio2{
+  padding-left:50px
+}
+.radio3{
+  padding-left:50px;
+}
+#playerType{
+width:100%
+}
+#scrollToTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scrollToTopButton i {
+  
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#scrollToTopButton:hover {
+  opacity: 1;
+  background-color: #5a779e;
+}

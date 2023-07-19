@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Database Systems | Project</title>
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+</head>
+<body>
+  <nav  class="navbar navbar-expand-lg bg-body-tertiary">
+    <div  class="container-fluid">
+      <a  class="navbar-brand" href="#">🏏alpha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="LoginButton" class="nav-link active" aria-current="page" onclick="login()">Login</a>
+          </li>
+          <li class="nav-item">
+            <a id="ChangePass" class="nav-link active" aria-current="page" href="change.html">Change Password</a>
+          </li>
+          <li class="nav-item">
+            <a id="Admin"  class="nav-link active" aria-current="page" onclick="adminBlock()">Search Stats</a>
+          </li>
+        <form id="searchBar" class="d-flex" role="search">
+          <input  id="Search" class="form-control me-2" type="search" placeholder="Not Working" aria-label="Search">
+          <button id="Button" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+ <h1 class="header">
+  <div class="logoBox">
+    <img src="pictures/logo2.png" alt="Logo" class="logo">
+  </div>
+  <div class="text-box">
+    <h1 class="primary-heading">
+      <span >Alpha Team Management</span>
+      <br><span>System</span>
+    </h1>
+    <a type="button" onclick="SignUP()" href="#" id="SignUP" class="btn btn-white btn-animated" ><b>Sign Me Up</b></a>
+  </div>
+ </h1>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="script.js"></script>
+</body>
+</html>

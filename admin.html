@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search | Player Stats</title>
+  <link rel="icon" type="image/x-icon" href="pictures/admin.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<body>
+  <button id="scrollToTopButton" title="Scroll to Top">
+    <b class="fas fa-arrow-up">^</b>
+  </button>
+
+ <div class="Player">
+  <h1>Search Player Stats</h1>
+ </div>
+  <div class="container">
+    <form id="playerForm" action="action.php" method="POST">
+      <div class="input-group">
+        <label for="playerName">Player Name:</label>
+        <input type="text" id="playerName" placeholder="Enter Player Name" name="playerName" required>
+      </div>
+
+      <div class="input-group">
+        <label for="playerCountry">Player Country:</label>
+        <input type="text" id="playerCountry" placeholder="Enter Player Country" name="playerCountry" required>
+      </div>
+      <div class="input-group">
+        <label for="playerType">Player Type:</label>
+        <select id="playerType" name="playerType" required>
+          <option value="">Select Player Type</option>
+          <option value="Batsman">Batsman</option>
+          <option value="Bowler">Bowler</option>
+          <option value="All-rounder">All-rounder</option>
+          <option value="Wicketkeeper">Wicketkeeper</option>
+        </select>
+        <div class="input-group" style="margin-top: 20px;">
+          <label for="playerCountry">Number of Formats:</label>
+          <input type="text" id="playerCountry" placeholder="Enter the Number of Formats a Players Plays" name="formats" required>
+        </div>
+      <!-- <div class="input-group">
+        <label for="playerDOB">Player Date of Birth:</label>
+        <input type="date" id="playerDOB" name="playerDOB" required>
+      </div>
+  
+     
+     
+      <div class="input-group">
+        <label for="playerRanking">Player Ranking:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Ranking" name="playerRanking" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Number of Matches in ODI:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter No. of Matches ODI Format" name="odiMatches" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Number of Matches in T20I:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter No. of Matches T20i Format" name="t2oiMatches" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Number of Matches in Test:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter No. of Matches Test Format" name="testMatches" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Enter ID:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter a unique Foreign Id for the Runs Table" name="runsId" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Runs in ODI:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Runs in ODI Format" name="RunsOdi" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Runs in T20I:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Runs in T20i Format" name="RunsT20i" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Runs in TEST:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Runs in TEST Format" name="RunsTest" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Wicket in ODI:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Wickets in ODI Format" name="wicketsOdi" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Wickets in T201:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Wickets in T20I Format" name="wicketsT20" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Wickets in TEST:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Wickets in Test Format" name="wicketsTest" required>
+      </div>
+      <div class="input-group">
+        <label for="playerRanking">Catches:</label>
+        <input type="number" id="playerRanking" placeholder= "Enter Player Catches in All Format" name="catches" required>
+      </div> -->
+    
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- <script src="admin.js"></script> -->
+</body>
+</html>
